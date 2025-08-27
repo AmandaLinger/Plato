@@ -1,0 +1,149 @@
+/* assets/css/base.css */
+@font-face {
+  font-family: 'Neon';
+  src: url('../fonts/Neon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Estilos de reset básico e fontes */
+body {
+    font-family: 'Neon', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    /* As cores serão definidas pelo tema via classes ou JS */
+}
+
+/* Fundo com imagem de garçom */
+.bg-waiter {
+    position: fixed; /* Use 'fixed' para fixar a imagem na janela do navegador */
+    bottom: -100px;
+    left: 10%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+    z-index: -1;
+    width: 600px;
+}
+/* Estilos de botões e inputs genéricos (que podem ser usados em qualquer lugar) */
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.input-field {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos do toggle switch (genéricos, mas cores definidas por tema) */
+.theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2; /* Garante que fique acima de outros elementos */
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: var(--light-toggle-label-bg); /* Cor padrão do toggle */
+}
+
+.toggle-label:after {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px; /* Ajustado para 2px para melhor alinhamento */
+    left: 2px; /* Ajustado para 2px */
+    transition: left 0.3s, background-color 0.3s;
+    background-color: var(--light-toggle-dot-bg); /* Cor padrão do "pino" */
+}
+
+.toggle-checkbox:checked + .toggle-label:after {
+    left: 27px; /* Move para a direita quando checado */
+}
+
+/* -------------------- */
+/* Media Queries para Responsividade */
+/* -------------------- */
+
+@media screen and (max-width: 600px) {
+    /* Ajustes para a imagem de fundo do garçom */
+   .bg-waiter {
+        width: 100%;
+        height: auto;
+        bottom: -50px;
+        left: -25%; /* Adicione ou ajuste esta linha para mover para a esquerda */
+        transform: translateX(0); /* Remova o transform para não centralizar */
+    }
+
+    /* Ajustes para o container principal em telas menores */
+    .login-container,
+    .home-container {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    /* Ajustes para os botões do menu */
+    .menu-options {
+        max-width: 10%;
+        gap: 10px;
+    }
+
+    /* Ajustes para os botões */
+    .menu-button,
+    .logout-button,
+    .btn-enter {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    /* Ajustes para inputs */
+    .input-group input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Ajustes para a logo e o texto */
+    .logo img {
+        width: 100px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    /* Posição do toggle switch */
+    .theme-switcher {
+        top: 10px;
+        right: 10px;
+    }
+}

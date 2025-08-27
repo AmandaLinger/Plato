@@ -1,0 +1,143 @@
+/* Container da página Home */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; /* Para garantir que o conteúdo fique acima da imagem de fundo */
+}
+
+/* Estilos para o logo do restaurante */
+.logo {
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Container dos botões do menu */
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilos gerais dos botões */
+.menu-button, .logout-button {
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 10px; /* Borda mais suave, como no protótipo */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os botões do menu */
+.menu-button {
+    color: var(--light-button-text-color);
+    background: linear-gradient(145deg, #6c6c6c, #595959); /* Gradiente de cinza */
+}
+
+/* Estilo para o botão de sair */
+.logout-button {
+    margin-top: 50px;
+    background: #424242; /* Fundo cinza escuro */
+    color: #e0e0e0; /* Texto claro */
+    border-radius: 10px;
+    width: 130px;
+    align-self: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.5;
+}
+
+.logout-button:hover {
+    background-color: #555; /* Cor de hover um pouco mais clara */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Efeito hover nos botões */
+.menu-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logout-button:hover {
+    background-color: #d4d4d4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.top-menu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex; /* Alinha os itens em uma linha */
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 10px; /* Garante que não haja espaçamento entre eles */
+    z-index: 10;
+}
+
+/* Estilos para o botão de 3 pontinhos */
+.menu-dots-container {
+    position: relative;
+    display: inline-block;
+    /* Remova a linha "margin-top" daqui */
+}
+
+.menu-dots-button {
+  background: transparent;
+  border: none;
+  color: var(--light-text-color); /* Dark color for light theme */
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Estilos para o menu pop-up */
+.popup-menu {
+    display: none; /* Escondido por padrão */
+    position: absolute;
+    top: 100%; /* Posiciona abaixo do botão */
+    right: 0;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.popup-menu.show {
+    display: block;
+}
+
+.popup-menu .menu-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.popup-menu .menu-item:hover {
+    background-color: #ddd;
+}

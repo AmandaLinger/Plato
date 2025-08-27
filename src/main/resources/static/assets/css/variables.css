@@ -1,0 +1,25 @@
+/* assets/css/variables.css */
+:root {
+  /* Variáveis para o tema claro */
+  --light-bg-color: #E0E1DD;
+  --light-text-color: #333;
+  --light-input-bg: #b8b8b8;
+  --light-input-placeholder-color: #424242;
+  --light-button-bg: #424242;
+  --light-button-text-color: #E0E1DD;
+  --light-link-color: #424242;
+  --light-toggle-label-bg: #ccc;
+  --light-toggle-dot-bg: #666;
+
+
+  /* Variáveis para o tema escuro */
+  --dark-bg-color: #424242;
+  --dark-text-color: #E0E1DD;
+  --dark-input-bg: #E0E1DD;
+  --dark-input-placeholder-color: #424242;
+  --dark-button-bg: #E0E1DD;
+  --dark-button-text-color: #424242;
+  --dark-link-color: #e0e0e0;
+  --dark-toggle-label-bg: #444;
+  --dark-toggle-dot-bg: #888;
+}
