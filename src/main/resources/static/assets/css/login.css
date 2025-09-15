@@ -4,26 +4,26 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 300px; /* Limita a largura do container */
+    max-width: 300px; 
     padding: 20px;
     box-sizing: border-box;
-    z-index: 1; /* Garante que o conteúdo fique sobre o garçom de fundo */
+    z-index: 1; 
     position: relative;
-    top: -50px; /* Move o container para cima, mais centralizado */
+    top: -50px; 
 }
 
-/* Estilos para a logo e o texto "PLATO" */
+
 .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2px; /* Aumenta o espaço abaixo da logo */
+    margin-bottom: 2px; 
 }
 
 .logo img {
-    width: 120px; /* Ajusta o tamanho da imagem */
+    width: 120px; 
     height: auto;
-    opacity: 0.8; /* Aumenta a opacidade para ficar mais visível */
+    opacity: 0.8; 
 }
 
 .logo-text {
@@ -34,18 +34,18 @@
     color: var(--light-text-color) /* Usa a variável para a cor do texto */
 }
 
-/* Estilos para os grupos de input (Login e Senha) */
+/* (Login e Senha) */
 .input-group {
     width: 100%;
-    margin-bottom: 10px; /* Aumenta o espaço entre os inputs */
+    margin-bottom: 10px; 
     opacity: 0.5;
 }
 
 .input-group input {
     width: 100%;
-    padding: 15px; /* Aumenta o padding para botões e inputs mais "gordinhos" */
+    padding: 15px; 
     border: none;
-    border-radius: 15px; /* Raio de borda mais suave */
+    border-radius: 15px; 
     font-size: 16px;
     box-sizing: border-box;
     text-align: center;
@@ -60,9 +60,9 @@
 /* Estilo do botão "Entrar" */
 .btn-enter {
     width: 100%;
-    padding: 18px; /* Padding maior */
+    padding: 18px; 
     border: none;
-    border-radius: 15px; /* Raio de borda suave */
+    border-radius: 15px; 
     background-color: var(--light-button-bg);
     color: var(--light-button-text-color);
     font-size: 18px;
@@ -70,15 +70,15 @@
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 10px; /* Espaço entre o último input e o botão */
+    margin-top: 10px; 
 }
 
 .btn-enter:hover {
-    background-color: var(--dark-button-bg); /* Cor de hover usando a variável do tema escuro */
+    background-color: var(--dark-button-bg); 
     color: var(--dark-button-text-color);
 }
 
-/* Estilo para o link "esqueci a senha" */
+/* link "esqueci a senha" */
 .forgot-password {
     font-family: Arial, sans-serif;
     display: block;

@@ -1,0 +1,46 @@
+#voltar{
+    background-color: var(--light-link-color);
+    position: flex;
+
+}
+.cabecalho{
+    
+}
+body{
+    background-color: var(--light-bg-color);
+}
+h2{
+    text-decoration: underline;
+
+}
+
+button{
+    background-color: var(--light-link-color);
+    color: var(--dark-input-bg);
+    border-radius: 20%;
+}
+span{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    position: left;
+}
+
+footer{
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    width: 100%;
+    background-color: var(--light-input-placeholder-color);
+    color:var(--light-bg-color);
+
+    display: flex;               /* ativa o flexbox */
+    justify-content: space-between; /* separa os elementos */
+    align-items: center;         /* alinha verticalmente */
+}
+
+#ir{
+    position: relative;
+    size: 50px;
+}
+

@@ -1,6 +1,6 @@
 /* assets/css/themes.css */
 
-/* Estilos para o tema claro (aplicados ao body padrão) */
+/* Estilos para o tema claro */
 body {
     background-color: var(--light-bg-color);
     color: var(--light-text-color);
@@ -8,7 +8,7 @@ body {
 
 .input-group input {
     background-color: var(--light-input-bg);
-    color: var(--light-text-color); /* Garante que o texto digitado seja visível */
+    color: var(--light-text-color); 
 }
 
 .input-group input::placeholder {
@@ -28,9 +28,8 @@ body {
     color: var(--light-link-color);
 }
 
-/* Estilos para o toggle switch no tema claro */
 .toggle-checkbox:checked + .toggle-label {
-    background-color: var(--light-toggle-label-bg); /* Manter o fundo claro quando ativo no tema claro */
+    background-color: var(--light-toggle-label-bg); 
     border: 1px solid var(--light-toggle-label-bg);
 }
 .toggle-checkbox:checked + .toggle-label:after {
@@ -38,14 +37,14 @@ body {
 }
 
 
-/* Estilos para o tema escuro (aplicados quando body tem a classe .dark-theme) */
+/* Estilos para o tema escuro  */
 body.dark-theme {
     background-color: var(--dark-bg-color);
     color: var(--dark-text-color);
 }
 
 body.dark-theme .logo-text {
-    color: var(--dark-text-color); /* Sobrescreve a cor com a do tema escuro */
+    color: var(--dark-text-color); 
 }
 
 body.dark-theme .logo img {
@@ -53,13 +52,13 @@ body.dark-theme .logo img {
 }
 
 body.dark-theme .bg-waiter {
-    filter: invert(1); /* Inverte as cores da imagem de fundo */
-    opacity: 0.1; /* Ajusta a opacidade para o tema escuro */
+    filter: invert(1); 
+    opacity: 0.1; 
 }
 
 body.dark-theme .input-group input {
     background-color: var(--dark-input-bg);
-    color: var(--dark-input-placeholder-color); /* Mude para a cor do placeholder, que é escura */
+    color: var(--dark-input-placeholder-color); 
     opacity: 1;
 }
 
@@ -80,7 +79,6 @@ body.dark-theme .forgot-password {
     color: var(--dark-link-color);
 }
 
-/* Estilos para o toggle switch no tema escuro */
 body.dark-theme .toggle-label {
     background-color: var(--dark-toggle-label-bg);
     border: 1px solid var(--dark-toggle-dot-bg);
@@ -91,42 +89,24 @@ body.dark-theme .toggle-label:after {
 }
 
 body.dark-theme .toggle-checkbox:checked + .toggle-label {
-    background-color: var(--dark-toggle-label-bg); /* Manter o fundo escuro quando ativo no tema escuro */
+    background-color: var(--dark-toggle-label-bg); 
     border: 1px solid var(--dark-toggle-dot-bg);
 }
 
 body.dark-theme .toggle-checkbox:checked + .toggle-label:after {
-    background-color: var(--dark-text-color); /* Pino do toggle branco no tema escuro ativado */
+    background-color: var(--dark-text-color); 
 }
-/* Adicione estas regras para o botão "Sair" no tema escuro */
+
 body.dark-theme .logout-button {
-    background: #e0e0e0; /* Fundo cinza claro */
-    color: #424242; /* Texto cinza escuro */
+    background: #e0e0e0; 
+    color: #424242; 
 }
 
 body.dark-theme .logout-button:hover {
-    background-color: #d4d4d4; /* Cor de hover mais escura */
-    color: #333; /* Texto mais escuro no hover */
+    background-color: #d4d4d4; 
+    color: #333; 
 }
 
 body.dark-theme .menu-dots-button {
-  color: var(--dark-text-color); /* Light color for dark theme */
+  color: var(--dark-text-color); 
 }
-
-/* Media Query específica para login.css, se houver necessidade de sobrescrever */
-/* @media screen and (max-width: 600px) {
-    .login-container {
-        width: 90%;
-        padding: 20px;
-    }
-    .logo img {
-        width: 120px;
-    }
-    .logo-text {
-        font-size: 20px;
-    }
-    .input-group input {
-        font-size: 14px;
-    }
-}
-*/
