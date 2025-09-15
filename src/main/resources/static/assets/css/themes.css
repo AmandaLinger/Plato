@@ -36,7 +36,6 @@ body {
     background-color: var(--light-toggle-dot-bg);
 }
 
-
 /* Estilos para o tema escuro  */
 body.dark-theme {
     background-color: var(--dark-bg-color);

@@ -1,16 +1,15 @@
-/* Container principal da página de login */
-.login-container {
+.recuperar_senha-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 300px; 
-    padding: 20px;
     box-sizing: border-box;
     z-index: 1; 
     position: relative;
     top: -50px; 
 }
+
 
 
 .logo {
@@ -29,12 +28,15 @@
 .logo-text {
     font-size: 24px;
     letter-spacing: 2px;
-    margin-top: 5px;
+    margin: 5px 0 5 0;
     font-weight: bold;
     color: var(--light-text-color) 
 }
+p{
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
 
-/* (Login e Senha) */
 .input-group {
     width: 100%;
     margin-bottom: 10px; 
@@ -57,7 +59,6 @@
     color: var(--light-input-placeholder-color);
 }
 
-/* Estilo do botão "Entrar" */
 .btn-enter {
     width: 100%;
     padding: 18px; 
@@ -71,24 +72,4 @@
     transition: background-color 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 10px; 
-}
-
-.btn-enter:hover {
-    background-color: var(--dark-button-bg); 
-    color: var(--dark-button-text-color);
-}
-
-/* link "esqueci a senha" */
-.forgot-password {
-    font-family: Arial, sans-serif;
-    display: block;
-    margin-top: 15px;
-    font-size: 14px;
-    text-decoration: none;
-    color: var(--light-link-color);
-    text-align: center;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
 }
