@@ -24,3 +24,23 @@ logoutButton.addEventListener('click', () => {
     // Redireciona para a página de login
     window.location.href = 'index.html';
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.getElementById("menu-dots-button");
+  const popupMenu = document.getElementById("popup-menu");
+
+  // Alterna exibição ao clicar nos 3 pontos
+  menuButton.addEventListener("click", (e) => {
+    e.stopPropagation(); // evita fechar imediatamente
+    popupMenu.classList.toggle("show");
+  });
+
+  // Fecha se clicar fora do menu
+  document.addEventListener("click", (e) => {
+    if (!popupMenu.contains(e.target) && !menuButton.contains(e.target)) {
+      popupMenu.classList.remove("show");
+    }
+  });
+});

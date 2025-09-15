@@ -14,19 +14,16 @@
         <div class="theme-switcher">
             <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
             <label for="theme-toggle" class="toggle-label"></label>
-        </div>
+    </div>
         
-        <div class="menu-dots-container">
-            <button class="menu-dots-button" id="menu-dots-button">
-                &#8942; </button>
-        </div>
-        <div class="popup-menu">
-            <a href="#" class="menu-item">Editar cardápio</a>
-            <a href="#" class="menu-item">Editar adicionais</a>
-            <a href="#" class="menu-item">Editar mesas</a>
+    <div class="menu-dots-container">
+        <button class="menu-dots-button" id="menu-dots-button">&#8942;</button>
+        <div class="popup-menu" id="popup-menu">
+            <button class="menu-item" onclick="window.location.href='editar-cardapio.html'">Editar cardápio</button>
+            <button class="menu-item" onclick="window.location.href='editar-adicionais.html'">Editar adicionais</button>
+            <button class="menu-item" onclick="window.location.href='editar-mesas.html'">Editar mesas</button>
         </div>
     </div>
-    
     <div class="home-container">
         <div class="logo">
             <img id="restaurant-logo" src="#" alt="Logo do Restaurante">
@@ -44,5 +41,6 @@
 
     <script src="../assets/js/home.js"></script>
     <script src="../assets/js/theme-toggle.js"></script>
+
 </body>
 </html>
