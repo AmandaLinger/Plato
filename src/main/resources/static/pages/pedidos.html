@@ -10,24 +10,36 @@
     <link rel="stylesheet" href="../assets/css/pedidos.css">
 </head>
 <body>
-    <div class="cabecalho">
-        <button id="voltar">⬅</button>
-        <h2>Fazer pedido</h2>
-        <span><img src="../assets/img/logo-cebola.png" alt="Logo do restaurante"></span>
-        <button>Hamburger</button>
-        <button>Bebida</button>
-        <button>Outros</button>
-    </div>
+    <header class="cabecalho-container">
+        <div class="header-top">
+            <div class="voltar">
+                <button id="voltar">⬅</button>
+            </div>
+            <div class="logo-container">
+                <img id="logo_restaurante" src="../assets/img/logo-cebola.png" alt="Logo do Restaurante">
+            </div>
+        </div>
+        
+        <div class="header-bottom">
+            <span>Fazer pedido</span>
+            <div class="opcoes-categoria">
+                <button>Hamburger</button>
+                <button>Bebida</button>
+                <button>Outros</button>
+            </div>
+        </div>
+    </header>
 
     <div class="conteudo">
-
-    </div>
+        </div>
     
     <footer>
         <h3>Ver pedido</h3>
         <button id="ir">⮕</button>
     </footer>
+
     <img src="../assets/img/logo_plato_preta.png" alt="Garçom de fundo" class="bg-waiter">
+    
     <script src="assets/js/theme-toggle.js"></script>
 </body>
 </html>

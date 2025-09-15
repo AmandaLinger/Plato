@@ -1,46 +1,93 @@
-#voltar{
-    background-color: var(--light-link-color);
-    position: flex;
-
-}
-.cabecalho{
-    
-}
-body{
+body {
     background-color: var(--light-bg-color);
 }
-h2{
+
+/* Container principal para o cabeçalho */
+.cabecalho-container {
+    padding: 5px;
+    position: fixed;   /* fixa no topo */
+    top: 0;            /* cola no topo */
+    left: 0;           /* cola na esquerda */
+    width: 100%;       /* ocupa toda a largura da tela */
+    z-index: 1000;     /* garante que fique acima dos outros elementos */
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens nas extremidades */
+    align-items: center; 
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: column; 
+    align-items: left; 
+    margin-top: -40px;
+    margin-left: 55px;
+}
+
+.voltar button {
+    background-color: var(--light-input-placeholder-color);
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 50px; 
+    height: 50px;
+}
+
+.header-bottom span {
+    color: var(--light-input-placeholder-color);
     text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 2px;
+    
+}
+
+#logo_restaurante {
+    width: 80px; 
+    height: auto;
+    margin-right: 15px;
 
 }
 
-button{
+
+.opcoes-categoria {
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    margin-top: 0px;
+}
+
+.opcoes-categoria button {
     background-color: var(--light-link-color);
     color: var(--dark-input-bg);
-    border-radius: 20%;
-}
-span{
-    display: flex;
-    width: 60px;
-    height: 60px;
-    position: left;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
 }
 
-footer{
-    position: absolute;
-    bottom:0px;
+
+footer {
+    position: fixed;
+    bottom: 0;
     left: 0;
     width: 100%;
     background-color: var(--light-input-placeholder-color);
-    color:var(--light-bg-color);
-
-    display: flex;               /* ativa o flexbox */
-    justify-content: space-between; /* separa os elementos */
-    align-items: center;         /* alinha verticalmente */
+    color: var(--light-bg-color);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
 }
 
-#ir{
-    position: relative;
-    size: 50px;
+#ir {
+    background-color: var(--light-bg-color);
+    border: none;
+    color: var(--light-input-placeholder-color);
+    font-size: 30px;
+    margin-left: 5px;
+    border-radius: 15px;
 }
-
