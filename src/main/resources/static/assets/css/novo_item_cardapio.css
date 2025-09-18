@@ -79,19 +79,20 @@ h3{
 
     width: 100%; 
     min-height: 50px; 
-    font-size: 15px; /* Tamanho do texto que será digitado */
-    font-weight: normal; /* Apenas para o texto digitado, não para o label */
-    padding: 5px; /* Espaçamento interno */
-    resize: vertical; /* Permite que o usuário redimensione o campo verticalmente */
-    overflow: hidden; /* Esconde a barra de rolagem até o texto ser muito grande */
+    font-size: 15px;
+    font-weight: normal; 
+    padding: 5px; 
+    resize: vertical; 
+    overflow: hidden; 
 }
 .descricao-produto textarea::placeholder {
-    color:var( --dark-text-color-80);
+    color:var(--dark-text-color);
     font-weight: bold;
 }
 .valor-produto{
     font-size: 25px;
     font-weight: bold ;
+    color: var(--dark-text-color);
 }
 
 .valor-produto input[type="text"]{
@@ -99,11 +100,11 @@ h3{
     border: none;
     font-size: 15px;
     font-weight: bold;
-    color:var( --dark-text-color-80);
+    color:var( --dark-text-color);
     
 }
 .valor-produto input[type="text"] ::placeholder {
-    color:var( --dark-text-color-80);
+    color:var( --dark-text-color);
 }
 .btn-container {
     display: flex;
@@ -125,17 +126,17 @@ h3{
     background-color: transparent;
     border:none;
 
-    
+    color: var(--dark-text-color);
     width: 100%; 
     min-height: 50px; 
-    font-size: 15px; /* Tamanho do texto que será digitado */
-    font-weight: normal; /* Apenas para o texto digitado, não para o label */
-    padding: 5px; /* Espaçamento interno */
-    resize: vertical; /* Permite que o usuário redimensione o campo verticalmente */
-    overflow: hidden; /* Esconde a barra de rolagem até o texto ser muito grande */
+    font-size: 15px; 
+    font-weight: normal; 
+    padding: 5px; 
+    resize: vertical; 
+    overflow: hidden; 
 }
 .grupo-produto textarea::placeholder{
-    color:var( --dark-text-color-80);
+    color:var( --dark-text-color);
     font-size: 15px;
     font-weight: bold;
     width: 500px;
