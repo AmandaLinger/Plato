@@ -10,6 +10,9 @@
   --light-link-color: #424242;
   --light-toggle-label-bg: #ccc;
   --light-toggle-dot-bg: #666;
+  
+   /* Versão com transparência */
+  --light-input-placeholder-color-50: rgba(66, 66, 66, 0.5);
 
 
   /* Variáveis para o tema escuro */
@@ -23,3 +26,4 @@
   --dark-toggle-label-bg: #444;
   --dark-toggle-dot-bg: #888;
 }
+

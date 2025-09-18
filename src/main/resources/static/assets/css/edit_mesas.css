@@ -1,0 +1,68 @@
+.voltar button {
+    background-color: var(--light-input-placeholder-color);
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 50px; 
+    height: 50px;
+
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+.mesas-container{
+    background-color:var(--light-input-placeholder-color-50);
+    border-radius: 10px;
+    color: var(--light-bg-color);
+
+    padding:20px ;
+    width: 90%;
+    max-width: 400px;
+    height: 90vh;
+    max-height: 700px;
+    margin: 50px 20px 20px 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{
+    margin-bottom: 5px;
+}
+h2{
+    margin-top: 2px;
+    margin-bottom: 5px ;
+}
+.content-row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+}
+#slv_edicao ,#canc_edicao{ 
+    background-color: var(--light-input-placeholder-color);
+    font-weight: bold ;
+    border: none;
+    opacity: 100%;
+    border-radius: 5px;
+    color: var(--dark-text-color);
+    width: 200px; 
+    height:35px;
+}
+.input-mesas input{
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+
+}

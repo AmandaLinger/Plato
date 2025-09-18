@@ -13,10 +13,9 @@
     left: 15px;
 }
 .novo-adicional{
-    background-color:var(--light-input-placeholder-color);
+    background-color:var(--light-input-placeholder-color-50);
     display: flex;
     border-radius: 10px;
-    opacity: 50%;
 
     position: fixed;
     top:80px;
