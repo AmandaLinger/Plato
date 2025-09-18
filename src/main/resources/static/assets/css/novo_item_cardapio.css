@@ -1,0 +1,152 @@
+.voltar button {
+    background-color: var(--light-input-placeholder-color);
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 50px; 
+    height: 50px;
+
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+.label-container{
+    background-color:var(--light-input-placeholder-color-50);
+    border-radius: 10px;
+    color: var(--light-bg-color);
+
+    padding:20px ;
+    width: 90%;
+    max-width: 400px;
+    height: 90vh;
+    max-height: 700px;
+    margin: 20px auto;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+.custom-upload-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px; 
+    height: 45px; 
+    background-color: var( --dark-text-color-80 ); 
+    border-radius: 8px; 
+    font-size: 30px; 
+    color: var(--light-input-placeholder-color); 
+    margin-right: 15px; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+input[type="file"] {
+    display: none;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+}
+.nome-produto input[type="text"] {
+    width: 250px;
+    height: 40px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.nome-produto input[type="text"]::placeholder {
+    color:var(--dark-text-color);
+}
+.nome-produto{
+    font-size: 30px;
+}
+h3{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+.descricao-produto textarea {
+    background-color: transparent;
+    border: none;
+
+    color:var(--dark-text-color);
+
+    width: 100%; 
+    min-height: 50px; 
+    font-size: 15px; /* Tamanho do texto que será digitado */
+    font-weight: normal; /* Apenas para o texto digitado, não para o label */
+    padding: 5px; /* Espaçamento interno */
+    resize: vertical; /* Permite que o usuário redimensione o campo verticalmente */
+    overflow: hidden; /* Esconde a barra de rolagem até o texto ser muito grande */
+}
+.descricao-produto textarea::placeholder {
+    color:var( --dark-text-color-80);
+    font-weight: bold;
+}
+.valor-produto{
+    font-size: 25px;
+    font-weight: bold ;
+}
+
+.valor-produto input[type="text"]{
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color:var( --dark-text-color-80);
+    
+}
+.valor-produto input[type="text"] ::placeholder {
+    color:var( --dark-text-color-80);
+}
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    margin-top: 220px;
+}
+.btn-sn{
+    display: flex;
+    margin-bottom: 15px;
+}
+.grupo-produto{
+    font-size: 25px;
+    font-weight: bold ;
+}
+.grupo-produto textarea{
+    background-color: transparent;
+    border:none;
+
+    
+    width: 100%; 
+    min-height: 50px; 
+    font-size: 15px; /* Tamanho do texto que será digitado */
+    font-weight: normal; /* Apenas para o texto digitado, não para o label */
+    padding: 5px; /* Espaçamento interno */
+    resize: vertical; /* Permite que o usuário redimensione o campo verticalmente */
+    overflow: hidden; /* Esconde a barra de rolagem até o texto ser muito grande */
+}
+.grupo-produto textarea::placeholder{
+    color:var( --dark-text-color-80);
+    font-size: 15px;
+    font-weight: bold;
+    width: 500px;
+}
+#slv_edicao ,#canc_edicao{ 
+    background-color: var(--light-input-placeholder-color);
+    font-weight: bold ;
+    border: none;
+    opacity: 100%;
+    border-radius: 5px;
+    color: var(--dark-text-color);
+    width: 200px; 
+    height:35px;
+}
