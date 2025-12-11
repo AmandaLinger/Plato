@@ -16,51 +16,54 @@
         </div>
     </div>
     <div class="label-container">
-        <div class="inputs">
-            <div class="upload-container">
-                <label for="foto-produto" class="custom-upload-button">+</label>
-                <input type="file" id="foto-produto" name="foto-produto" accept="image/*">
+        <div class="container-space">
+            <div class="inputs">
+                <div class="upload-container">
+                    <label for="foto-produto" class="custom-upload-button">+</label>
+                    <input type="file" id="foto-produto" name="foto-produto" accept="image/*">
+                </div>
+                <div class="nome-produto">
+                    <label for="nome-produto"></label>
+                    <input type="text" placeholder="Nome" id="nome-produto" name="nome">
+                </div>
             </div>
-            <div class="nome-produto">
-                <label for="nome-produto"></label>
-                <input type="text" placeholder="Nome" id="nome-produto" name="nome">
-            </div>
-        </div>
-        <div class="descricao">
-            <div class="descricao-item">
-                <h3>Descrição:</h3>
-                <div class="descricao-produto">
-                <label for="descricao-produto"></label>
-                <textarea id="descricao-produto" type="text" placeholder="Escreva aqui uma descricao para o seu produto."></textarea>
-            </div>
+            <div class="descricao">
+                <div class="descricao-item">
+                    <h3>Descrição:</h3>
+                    <label for="descricao-produto"></label>
+                    <textarea id="descricao-produto" type="text" placeholder="Escreva aqui uma descricao para o seu produto."></textarea>
+                </div>
 
-            <div class="valor">
-                <div class="valor-produto">
-                <label for="valor-produto">Valor:</label>
-                <input type="text" placeholder="1,00" id="valor-produto" name="nome">
+                <div class="valor">
+                    <div class="valor-produto">
+                    <label for="valor-produto">Valor:</label>
+                    <input type="text" placeholder="1,00" id="valor-produto" name="nome">
+                    </div>
+                </div>
+
+                <div class="adicionais">
+                    <h3>Aceita adicionais?</h3>
+                    <div class="btn-sn">
+                        <div class="opcao">
+                            <input type="radio" id="sim" name="adicionais" value="sim">
+                            <label for="sim">Sim</label>
+                        </div>
+                        <div class="opcao">
+                            <input type="radio" id="nao" name="adicionais" value="nao">
+                            <label for="nao">Não</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grupo-produto">
+                    <label for="grupo-produto">Grupo:</label>
+                    <textarea id="grupo-produto" type="text" placeholder="Adicione em algum grupo."></textarea>
                 </div>
             </div>
 
-            <div class="adicionais">
-                <h3>Aceita adicionais?</h3>
-                <div class="btn-sn">
-                    <div class="opcao">
-                        <input type="radio" id="sim" name="adicionais" value="sim">
-                        <label for="sim">Sim</label>
-                    </div>
-                     <div class="opcao">
-                        <input type="radio" id="nao" name="adicionais" value="nao">
-                        <label for="nao">Não</label>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="grupo-produto">
-                <label for="grupo-produto">Grupo:</label>
-                <textarea id="grupo-produto" type="text" placeholder="Adicione em algum grupo."></textarea>
-            </div>
         </div>
-        <div class="btn-container">
+    </div>
+    <div class="btn-container">
             <div class="btn1">
                 <button id="slv_edicao">Salvar edição</button>
             </div>
@@ -68,7 +71,6 @@
                 <button id="canc_edicao">Cancelar edição</button>
             </div>
         </div>
-    </div>
     <img src="../assets/img/logo_plato_preta.png" alt="Garçom de fundo" class="bg-waiter">
 </body>
 </html>
